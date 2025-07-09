@@ -1,3 +1,8 @@
+body, html {
+  background: #000 !important;
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
 }

@@ -1,7 +1,7 @@
 .hero-section {
   width: 100vw;
   height: 80vh;
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat;
+  background: url('../download.webp') center center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -47,4 +47,89 @@
 .hero-btn:hover {
   background: linear-gradient(90deg, #2563eb 0%, #5b9df9 100%);
   transform: translateY(-2px) scale(1.04);
+}
+
+.sell-section {
+  width: 100vw;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 4rem 0;
+}
+
+.sell-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(24, 26, 27, 0.85);
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  max-width: 900px;
+  width: 90vw;
+  padding: 2.5rem 2rem;
+  gap: 2.5rem;
+}
+
+.sell-image {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.sell-info {
+  flex: 1;
+  color: #fff;
+  text-align: left;
+}
+
+.sell-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.sell-info p {
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+.sell-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #fbb034 0%, #ffdd00 100%);
+  color: #222;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.sell-btn:hover {
+  background: linear-gradient(90deg, #ffdd00 0%, #fbb034 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 700px) {
+  .sell-content {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+  }
+  .sell-image {
+    width: 180px;
+    height: 180px;
+  }
+  .sell-info h2 {
+    font-size: 1.3rem;
+  }
+  .sell-info p {
+    font-size: 1rem;
+  }
 } 
